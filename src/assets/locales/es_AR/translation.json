@@ -1,0 +1,38 @@
+{
+  "app": {
+    "btn":{
+      "es": "Español",
+      "en": "Ingles",
+      "search":"Buscar"
+    },
+    "room":{
+      "single":"Individual",
+      "double" :"Doble",
+      "family": "Familiar",
+      "multiple":"Multiple"
+    },
+    "title":{
+      "principal":"Buenas Tardes",
+      "secondary":"Buscá una ciudad, hotel o hasta un lugar famoso"
+    },
+    "subtitle":{
+      "principal":"¿Necesitás ideas para tu próximo viaje?",
+      "secondary":"Descubrí las mejores experiencias en hoteles en los más de 140 artículos de trivago Magazine, desde hoteles boutique en Mendoza hasta casas de campo encantadoras en Córdoba."
+    },
+    "label":{
+      "start":"Salida",
+      "end":"Llegada",
+      "room":"Habitacion"
+    },
+    "tab":{
+      "tab1":"Ciudades Destacadas",
+      "tab2":"Principales Destinos"
+    },
+    "constants": {
+      "languages": {
+        "es_AR": "Español",
+        "en_US": "Ingles"
+      }
+    }
+  }
+}
