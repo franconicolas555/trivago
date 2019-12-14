@@ -4,6 +4,7 @@ import { TextField } from '@material-ui/core';
 import { InputAdornment } from '@material-ui/core';
 import { IconButton } from '@material-ui/core';
 
+// generacion del componente custom de input donde se define el comportamiento de todos los inputs de busqueda
 function InputSearch(props) {
     return (
 

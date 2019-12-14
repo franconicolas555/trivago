@@ -1,7 +1,7 @@
 import React from 'react';
 import LogoTrivago from '../images/trivago.png'
 import { withTranslation } from "react-i18next";
-import './navHeader.scss'
+import './index.scss'
 class TitleComponent extends React.Component {
 
     render() {

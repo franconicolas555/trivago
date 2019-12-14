@@ -1,5 +1,5 @@
 import React from 'react';
-import './navHeader.scss'
+import './index.scss'
 import { withTranslation } from "react-i18next";
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';

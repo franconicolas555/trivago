@@ -12,7 +12,7 @@ const styles = {
         marginTop: '2%'
     }
 };
-//componente Card reutilizable
+//componente Hotels reutilizable
 function Hotels(props) {
     const { classes, hotels } = props;
     return (

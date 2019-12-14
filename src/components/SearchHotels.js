@@ -1,7 +1,6 @@
 import React from 'react';
 import { MuiPickersUtilsProvider, KeyboardDatePicker } from '@material-ui/pickers';
 import { withStyles } from '@material-ui/core/styles';
-
 import { withTranslation } from "react-i18next";
 import { data } from '../data.js'
 import MenuItem from '@material-ui/core/MenuItem';
@@ -10,7 +9,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import * as moment from 'moment';
 import 'moment/locale/es';
-//import CardHotels from './CardHotels.js';
 import MomentUtils from "@date-io/moment";
 import InputSearch from '../general-components/InputSearch.js';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -18,11 +16,6 @@ import SelectTrivago from '../general-components/SelectTrivago'
 import ButtonTrivago from '../general-components/ButtonTrivago'
 import Grid from '@material-ui/core/Grid';
 import Hotels from './Hotels.js';
-
-
-
-
-
 
 
 const styles = {
@@ -48,8 +41,6 @@ class SearchHotels extends React.Component {
     }
     //mock de los datos de la ciudad
     componentDidMount = () => {
-
-        this.setState({ citiesFilter: data.cities })
         this.setState({ citiesFilter: data.cities })
     }
 
@@ -67,7 +58,7 @@ class SearchHotels extends React.Component {
 
 
     onHandleFocus = () => {
-        //cambia de estado a true para abir el buscador y poder seleccionar una ciudad
+        //cambia de estado a true para abrir el buscador
         this.setState({ open: true })
     }
 

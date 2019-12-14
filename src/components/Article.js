@@ -1,5 +1,5 @@
 import React from 'react';
-import './navHeader.scss'
+import './index.scss'
 import { withTranslation } from "react-i18next";
 import { data } from '../data.js'
 import Card from '@material-ui/core/Card';
