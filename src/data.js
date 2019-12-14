@@ -7,9 +7,10 @@ export const data = {
         { codCity: 4504, value: 5, name: 'Viña del Mar', description: 'Ciudad-Region de Valparaiso Chile' }
     ],
     hotels: [
-        { codCity: 4500, name: 'Eurostars Conquistador', location: 'Córdoba, a 0.6 km de: Centro de la ciudad', url: 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/73/26/73261_v38.jpeg' },
-        { codCity: 4502, name: 'NH Buenos Aires City Hotel', location: 'Buenos Aires, a 0.9 km de: Puerto Madero', url: 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/13/70/137091_v38.jpeg' },
-        { codCity: 4503, name: 'Howard Johnson Plaza Florida Street', location: 'Ciudad-Mendoza Provincia Capital', url: 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/73/24/73245_v75.jpeg' },
+        { id: '1', codCity: 4500, name: 'Eurostars Conquistador', location: 'Córdoba, a 0.6 km de: Centro de la ciudad', url: 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/73/26/73261_v38.jpeg' },
+        { id: '2', codCity: 4502, name: 'NH Buenos Aires City Hotel', location: 'Buenos Aires, a 0.9 km de: Puerto Madero', url: 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/13/70/137091_v38.jpeg' },
+        { id: '3', codCity: 4503, name: 'Howard Johnson Plaza Florida Street', location: 'Ciudad-Mendoza Provincia Capital', url: 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/73/24/73245_v75.jpeg' },
+        { id: '4', codCity: 4503, name: 'Howard Johnson Plaza Florida Street', location: 'Ciudad-Mendoza Provincia Capital', url: 'https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/14/33/14338_v75.jpeg' },
     ],
 
     article: [

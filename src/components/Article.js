@@ -100,5 +100,5 @@ class Article extends React.Component {
     }
 }
 
-const componenteTraducido = withTranslation()(Article);
-export { componenteTraducido as Article };
+const Traduccion = withTranslation()(Article);
+export { Traduccion as Article };

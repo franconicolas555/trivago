@@ -17,5 +17,5 @@ class TitleComponent extends React.Component {
     }
 }
 
-const componenteTraducido = withTranslation()(TitleComponent);
-export { componenteTraducido as TitleComponent };
+const traduccion = withTranslation()(TitleComponent);
+export { traduccion as TitleComponent };

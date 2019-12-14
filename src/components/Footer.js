@@ -1,19 +1,11 @@
 import React from 'react';
-import Select from '@material-ui/core/Select'
 import { withTranslation } from "react-i18next";
-import i18n from '../i18n';
-import { appConstants } from "../constants/app.constants";
-import uuid from "uuidv4";
-const options = [{ name: "Argentina", key: 'es_AR', }, { name: "Estados Unidos", key: 'en_US' }];
+
 class Footer extends React.Component {
 
-    setLanguage = async (ev) => {
-        await i18n.changeLanguage(ev.target.value);
-    }
 
     render() {
-        const { t } = this.props;
-        const { setLanguage } = this;
+
         return (
             <div>
                 <div id="footer" style={{ display: 'flex' }}>
@@ -33,16 +25,7 @@ class Footer extends React.Component {
                             </ul></div>
                     </div>
                     <div style={{ backgroundColor: '#eee', height: '46px', marginLeft: '16%', display: 'block' }}>
-                        <Select
-                            onChange={(ev) => {
-                                setLanguage(ev);
-                            }}
-                            defaultValue="es_AR"
-                        >
-                            {Object.keys(appConstants.languages).map(key => (
-                                <option key={uuid} value={key}> {t(appConstants.languages[key].name)}</option>
-                            ))}
-                        </Select>
+
                     </div>
                 </div>
 
@@ -62,5 +45,5 @@ class Footer extends React.Component {
 }
 
 
-const componenteTraducido = withTranslation()(Footer);
-export { componenteTraducido as Footer };
+const Traduccion = withTranslation()(Footer);
+export { Traduccion as Footer };

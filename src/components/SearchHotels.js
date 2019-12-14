@@ -17,13 +17,10 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import SelectTrivago from '../general-components/SelectTrivago'
 import ButtonTrivago from '../general-components/ButtonTrivago'
 import Grid from '@material-ui/core/Grid';
+import Hotels from './Hotels.js';
 
 
-const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
-]
+
 
 
 
@@ -52,6 +49,7 @@ class SearchHotels extends React.Component {
     //mock de los datos de la ciudad
     componentDidMount = () => {
 
+        this.setState({ citiesFilter: data.cities })
         this.setState({ citiesFilter: data.cities })
     }
 
@@ -101,8 +99,9 @@ class SearchHotels extends React.Component {
         let search = ev.target.value
         let cities = this.state.cities
         let filter = []
-        // eslint-disable-next-line
+
         try {
+            // eslint-disable-next-line
             cities.map(city => {
                 if (city.name.toLowerCase().startsWith(search.toLowerCase())) {
                     let obj = {}
@@ -123,9 +122,16 @@ class SearchHotels extends React.Component {
     }
 
     render() {
-        const { stard, end, open, optSelected, IsOpen, locale, citiesFilter, loading } = this.state
+        const { stard, end, open, hotelFilter, optSelected, IsOpen, locale, citiesFilter, loading } = this.state
         const { classes, t } = this.props
         const { onHandleBlur, onHandleChange, onHandleFocus } = this
+
+        const options = [
+            { value: 1, label: t('app.room.single') },
+            { value: 2, label: t('app.room.double') },
+            { value: 3, label: t('app.room.family') },
+            { value: 4, label: t('app.room.multiple') }
+        ]
         return (
             <div className={classes.root}>
                 <Grid container
@@ -204,8 +210,10 @@ class SearchHotels extends React.Component {
                         </MuiPickersUtilsProvider>
                     </Grid>
 
-                    <Grid item xs={6} sm={6} md={12} lg={1} xl={1}>
+                    <Grid item xs={6} sm={6} md={12} lg={2} xl={2}>
                         <SelectTrivago
+                            placeholder="seleccione"
+                            defaultValue={options[0]}
                             options={options}
                         />
                     </Grid>
@@ -217,6 +225,9 @@ class SearchHotels extends React.Component {
                     </Grid>
 
                 </Grid>
+
+
+                <Hotels hotels={hotelFilter} ></Hotels>
             </div >
 
         )
@@ -224,6 +235,6 @@ class SearchHotels extends React.Component {
 }
 //hoc withStyles de material ui para el estilado
 // Se utiliza el HOC withTranslation donde obtiene la función t y la instancia i18n dentro de su componente
-const componenteTraducido = withTranslation()(SearchHotels);
-const componente = withStyles(styles)(componenteTraducido);
-export { componente as SearchHotels };
+const Traduccion = withTranslation()(SearchHotels);
+const components = withStyles(styles)(Traduccion);
+export { components as SearchHotels };
